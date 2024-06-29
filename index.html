@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+        <ul>
+            <li><a href="home">About</a> </li>
+            <li><a href="projects">Project</a> </li>
+            <li><a href="Contact Me">Contact Me</a> </li>
+        
+        
+        </ul>
+        <img src="menu1.avif" class="logo" onclick="toggle()">
+        <div class="submenu" id="openMenu">
+            <div class="menu-wrap" >
+                <div class="user-info">
+                    <img src="dylogo.png" >
+                    <h2 style="color:black">Dheeraj Yadav</h2>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <p>Github Link</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Setting</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <p>Help</p>
+                    <span>></span>
+                </a>
+            </div>
+           
+        </div>
+    </nav>
+        
+</div>
+<script >
+    let menu = document.getElementById('openMenu');
+function toggle(){
+    menu.classList.toggle("open-menu");
+}
+</script>
+
+    
+</body>
+</html>
