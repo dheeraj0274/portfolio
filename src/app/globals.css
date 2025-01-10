@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+@layer base{
+  .text-outline{
+     -webkit-text-stroke: 1px  rgb(59,130,246);
   }
 }
+@layer components{
+  .btn{
+    @apply bg-gradient-to-r from-primary to-primary/50 text-white font-bold
+     py-2 px-4 rounded hover:red-shadow duration-300;
+  }
+}
+@layer utilities{
+  .red-shadow{
+  box-shadow: 0 0px 20px 5px skyblue;
+}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
