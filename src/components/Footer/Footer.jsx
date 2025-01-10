@@ -20,7 +20,7 @@ const Footer = () => {
             <h2 className='text-3xl font-bold'>Connect & Collaborate</h2>
             <p>contact dy911848@gmail.com</p>
             <p>copyright ©  2024 </p>
-            <p className='mb-4'>Last Updated: <strong>17 dec 2024</strong></p>
+            <p className='mb-4'>Last Updated: <strong>10 jan 2025</strong></p>
         </div>
         <div className=' flex items-center justify-center gap-3 lg:gap-10'>
             <div className='flex flex-row md:flex-col gap-7'>
