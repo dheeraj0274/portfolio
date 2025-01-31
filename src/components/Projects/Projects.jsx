@@ -55,13 +55,13 @@ const ProjectData = [
         link: "https://dheeraj0274.github.io/drumKIT/" ,
          desc:"this is the project that i have launch on github and fully functional"
     },
-    {
-        id:6,
-        title: "Food-website",
-        image: Project6,
-        link: "" ,
-         desc:"this is the project that i have launch on github and fully functional"
-    }
+    // {
+    //     id:6,
+    //     title: "Food-website",
+    //     image: Project6,
+    //     link: "" ,
+    //      desc:"this is the project that i have launch on github and fully functional"
+    // }
 ]
 
 const Projects = () => {
