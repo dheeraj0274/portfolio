@@ -3,10 +3,10 @@ import Image from 'next/image'
 import {motion} from 'framer-motion'
 import Project1 from '../../assets/game.jpeg'
 import Project2 from '../../assets/radar.jpeg'
-import Project3 from '../../assets/mortgage.jpeg'
+import Project3 from '../../assets/aai-enhancer.png'
 import Project4 from '../../assets/namo.jpeg'
 import Project5 from "../../assets/drum.jpeg"
-import Project6 from "../../assets/mba.png"
+import Project6 from "../../assets/Task-Manager.png"
 
 
 const bgStyle={
@@ -25,35 +25,42 @@ const ProjectData = [
         title: "Guess the number",
         image: Project1,
         link: "https://first-game-six.vercel.app/",
-        desc:"this is the project that i have launch on github and fully functional"
+        desc:": A simple interactive game where users try to guess a randomly generated number within a limited range."
     },
     {
-        id:2 ,
+        id:4 ,
         title: "Real time Radar",
         image: Project2,
         link: "https://my-radar-eight.vercel.app/",
-         desc:"this is the project that i have launch on github and fully functional"
+         desc:"Provide Real time Weather Data "
     },
     {
         id:3 ,
-        title: "Moratgage Calculator",
-        link:'',
+        title: "Task-Manager",
+        link:'https://task-manager-frontend-two-rose.vercel.app/',
+        image: Project6,
+         desc:"A collaborative platform for managing tasks ,enabling multiple users to create, assign, and track progress efficiently."
+    },
+    {
+        id:2 ,
+        title: "AI-Image-Enhancer",
+        link:'https://ai-enhancer-sigma.vercel.app/',
         image: Project3,
-         desc:"this is the project that i have launch on github and fully functional"
+         desc:"An AI-powered tool that enhances the quality of images, improving resolution and clarity through advanced algorithms."
     },
     {
         id:4 ,
         title: "About-Namo",
         link: "https://dheeraj0274.github.io/-Prime-Minister/" ,
         image: Project4,
-         desc:"this is the project that i have launch on github and fully functional"
+         desc:"First project dedicated to honible PM Shree Narendra Modi"
     },
     {
         id:5 ,
         title: "Drum-Kit",
         image: Project5,
         link: "https://dheeraj0274.github.io/drumKIT/" ,
-         desc:"this is the project that i have launch on github and fully functional"
+         desc:"A virtual drum kit that lets users play different drum sounds using keyboard keys or mouse clicks"
     },
     // {
     //     id:6,
@@ -96,9 +103,9 @@ const Projects = () => {
                                 <div  className='hidden group-hover:flex justify-around
                                 items-center duration-300'
                                 >
-                                    <a href={project.link}  className='border-2 border-white 
+                                    <a href={project.link}  target='blank' className='border-2 border-white 
                                     px-4 py-2 rounded-lg'>Live</a>
-                                    <button className='btn '>View Code</button>
+                                    <button className='btn ' >View Code</button>
                                 </div>
                      
                     </div>
