@@ -19,7 +19,7 @@ const Responsivemenu = ({showMenu , toggleMenu}) => {
                          NavLinks.map((link)=>{
                            
                            
-                            return(
+                            return (
             
                             <li key={link.id} className="py-6">
                             <Link

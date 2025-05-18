@@ -1,12 +1,14 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 import Project1 from '../../assets/game.jpeg'
 import Project2 from '../../assets/radar.jpeg'
 import Project3 from '../../assets/aai-enhancer.png'
-import Project4 from '../../assets/namo.jpeg'
+
 import Project5 from "../../assets/drum.jpeg"
 import Project6 from "../../assets/Task-Manager.png"
+import Project7 from '../../assets/erp.png'
 
 
 const bgStyle={
@@ -20,48 +22,51 @@ const bgStyle={
 
 
 const ProjectData = [
-    {
+     {
         id:1 ,
+        title: "Task-Manager",
+        link:'https://task-manager-frontend-two-rose.vercel.app/',
+        image: Project6,
+         desc:"A collaborative platform for managing tasks ,enabling multiple users to create, assign, and track progress efficiently.",
+         repo:'https://github.com/dheeraj0274/task-manager-backend'
+    },
+     {
+        id:2 ,
+        title: "ERP-System",
+        image: Project7,
+        link: "https://erp-enhanced.netlify.app/" ,
+         desc:"This is an ERP system to manage the data and Marking attendence of the students including Official announcement features",
+        repo:'https://github.com/dheeraj0274/ERP'
+
+    },
+   
+   
+    {
+        id:3 ,
+        title: "AI-Image-Enhancer",
+        link:'https://ai-enhancer-sigma.vercel.app/',
+        image: Project3,
+         desc:"An AI-powered tool that enhances the quality of images, improving resolution and clarity through advanced algorithms.",
+         repo:'https://github.com/dheeraj0274/AI--enhancer'
+    },
+     
+     {
+        id:4 ,
+        title: "Real time Radar",
+        image: Project2,
+        link: "https://my-radar-eight.vercel.app/",
+         desc:"Provide Real time Weather Data ",
+         repo:'https://github.com/dheeraj0274/myRadar'
+    },
+    {
+        id:5,
         title: "Guess the number",
         image: Project1,
         link: "https://first-game-six.vercel.app/",
         desc:": A simple interactive game where users try to guess a randomly generated number within a limited range."
     },
-    {
-        id:4 ,
-        title: "Real time Radar",
-        image: Project2,
-        link: "https://my-radar-eight.vercel.app/",
-         desc:"Provide Real time Weather Data "
-    },
-    {
-        id:3 ,
-        title: "Task-Manager",
-        link:'https://task-manager-frontend-two-rose.vercel.app/',
-        image: Project6,
-         desc:"A collaborative platform for managing tasks ,enabling multiple users to create, assign, and track progress efficiently."
-    },
-    {
-        id:2 ,
-        title: "AI-Image-Enhancer",
-        link:'https://ai-enhancer-sigma.vercel.app/',
-        image: Project3,
-         desc:"An AI-powered tool that enhances the quality of images, improving resolution and clarity through advanced algorithms."
-    },
-    {
-        id:4 ,
-        title: "About-Namo",
-        link: "https://dheeraj0274.github.io/-Prime-Minister/" ,
-        image: Project4,
-         desc:"First project dedicated to honible PM Shree Narendra Modi"
-    },
-    {
-        id:5 ,
-        title: "Drum-Kit",
-        image: Project5,
-        link: "https://dheeraj0274.github.io/drumKIT/" ,
-         desc:"A virtual drum kit that lets users play different drum sounds using keyboard keys or mouse clicks"
-    },
+   
+  
     // {
     //     id:6,
     //     title: "Food-website",
@@ -88,9 +93,7 @@ const Projects = () => {
           {
             ProjectData.map((project)=>{
                 return(
-                <div key={project.id} className='bg-black hover:red-shadow border-2 border-primary/80
-                p-4 rounded-xl hover:scale-110 duration-300 group space-y-5
-                '>
+                <div key={project.id} className='bg-black hover:red-shadow border-2 border-primary/80 p-4 rounded-xl hover:scale-110 duration-300 group space-y-5'>
                     <Image src={project.image} 
                             alt={project.title}
                             className="w-full"
@@ -105,7 +108,7 @@ const Projects = () => {
                                 >
                                     <a href={project.link}  target='blank' className='border-2 border-white 
                                     px-4 py-2 rounded-lg'>Live</a>
-                                    <button className='btn ' >View Code</button>
+                                    <button className='btn ' onClick={()=> window.open(project.repo,'_blank')} >View Code</button>
                                 </div>
                      
                     </div>
