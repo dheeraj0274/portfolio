@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 import Project1 from '../../assets/game.jpeg'
-import Project2 from '../../assets/radar.jpeg'
+import Project2 from '../../assets/npm.jpg'
 import Project3 from '../../assets/aai-enhancer.png'
 
 import Project5 from "../../assets/drum.jpeg"
@@ -52,11 +52,11 @@ const ProjectData = [
      
      {
         id:4 ,
-        title: "Real time Radar",
+        title: "Create-mern-Folder",
         image: Project2,
-        link: "https://my-radar-eight.vercel.app/",
-         desc:"Provide Real time Weather Data ",
-         repo:'https://github.com/dheeraj0274/myRadar'
+        link: "https://www.npmjs.com/package/create-mern-folder",
+         desc:"This is an npm package that helps to create a mern folder structure with a single command",
+         repo:'https://github.com/dheeraj0274/create-mern-folder'
     },
     {
         id:5,
