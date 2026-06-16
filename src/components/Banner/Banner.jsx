@@ -32,7 +32,7 @@ const Banner = () => {
             </div>
 
 
-            {/* Banner Info */}
+          
             <div className="flex justify-center items-center" >
                 <div  className='text-left space-y-7 lg:maxw-[400px]'>
                     <h1 className='text-3xl lg:text-4xl text-center'>I am a Full stack Developer</h1>

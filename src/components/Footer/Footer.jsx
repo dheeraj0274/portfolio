@@ -20,22 +20,9 @@ const Footer = () => {
             <h2 className='text-3xl font-bold'>Connect & Collaborate</h2>
             <p>contact dy911848@gmail.com</p>
             <p>copyright ©  2024 </p>
-            <p className='mb-4'>Last Updated: <strong>10 jan 2025</strong></p>
+            <p className='mb-4'>Last Updated: <strong>16 june 2026</strong></p>
         </div>
-        <div className=' flex items-center justify-center gap-3 lg:gap-10'>
-            <div className='flex flex-row md:flex-col gap-7'>
-                <a 
-                             href='https://www.linkedin.com/in/dheeraj-yadav-b0535b247/' className='hover:scale-150 hover:red-shadow duration-300 group space-y-5' >
-                    <FaLinkedin className="text-4xl"/>
-                </a>
-                <a className='hover:scale-150 duration-300 hover:red-shadow group space-y-5' href='https://www.instagram.com/dy990_1/?__pwa=1' >
-                    <FaInstagram className="text-4xl"/>
-                </a>
-                <a className='hover:scale-150 hover:red-shadow duration-300 group space-y-5' href='#' >
-                    <FaTwitter className="text-4xl"/>
-                </a>
-            </div>
-        </div>
+       
         </div>
     </div>
    </section>

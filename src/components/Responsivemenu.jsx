@@ -36,7 +36,7 @@ const Responsivemenu = ({showMenu , toggleMenu}) => {
                     </ul>
                 </div>
             </div>
-            {/* menu footer section  */}
+         
         </div>
       </div>
   )
