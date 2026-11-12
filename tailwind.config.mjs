@@ -1,4 +1,4 @@
-import { transform } from 'next/dist/build/swc/generated-native';
+
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -16,7 +16,7 @@ export default {
       } ,
       colors:{
         primary:'rgb(59, 130, 246)' ,
-      },
+      }, 
       container:{
            center:"true",
            padding:{

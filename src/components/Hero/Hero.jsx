@@ -6,6 +6,7 @@ import {motion} from "framer-motion"
 import CountUp from "react-countup"
 import photo from "../../assets/hacker3.png"
 import circle from "../../assets/circle4.png"
+import LiveClock from './LiveClock'
 
 const wallBackground ={
     backgroundImage: `url(${Wall.src})`,
@@ -35,7 +36,7 @@ const Hero = () => {
     
         
   return (
-<section style={wallBackground} className="bg-black  
+<section style={wallBackground} className="bg-black  mt-10
 text-white">
     <div className="bg-gradient-to-b from-primary/50 to-black  ">
         <div className="container grid grid-cols-1
@@ -52,10 +53,10 @@ text-white">
             </motion.p>
             <motion.button variants={slideUp(0.8)} initial="initial" animate="animate" className='btn '>Know More</motion.button>
            {/* stats-section */}
-           <div className='flex justify-around bg-gradient-to-b from-primary/50 to-black
+           <div className='ml-10 flex justify-around bg-blue-600
            border-2 border-primary/80 rounded-xl hover:red-shadow hover:scale-105 duration-300
            md:max-w-[400px] !mt-[44px] p-4'>
-            <div className='flex flex-col items-center gap-2'>
+            <div className='flex flex-col items-center gap-2 '>
                 <p className='text-2xl font-bold'> <CountUp end={19} start={0} suffix='+' 
                     /></p>
                 <p className='text-sm'>Age</p>
@@ -81,7 +82,7 @@ text-white">
         </div>
 
         {/* hero-section */}
-        <div className='flex justify-center md:justify-end items-center relative'>
+        <div className='flex justify-center md:mt-10 md:justify-end items-center relative'>
             <div className='bg-black rounded-3xl overflow-hidden h-[500px]  flex items-end relative group hover:red-shadow
             hover:scale-105 duratio-700 '>
                 <Image src={circle}  alt="circle"
@@ -90,7 +91,11 @@ text-white">
                 />
             </div>
         </div>
+         <div className=" ml-10">
+  <LiveClock />
+</div>
         </div>
+       
     </div>
 </section>
   )
