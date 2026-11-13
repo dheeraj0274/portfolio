@@ -36,7 +36,7 @@ const Hero = () => {
     
         
   return (
-<section style={wallBackground} className="bg-black  mt-10 h-100vh
+<section  className="bg-zinc-900  mt-10 h-100vh
 text-white">
     <div className="bg-gradient-to-b from-primary/50 to-black  ">
         <div className="container grid grid-cols-1
@@ -53,7 +53,7 @@ text-white">
             </motion.p>
             <motion.button variants={slideUp(0.8)} initial="initial" animate="animate" className='btn '>Know More</motion.button>
            {/* stats-section */}
-           <div className='ml-10 flex justify-around bg-blue-600
+           <div className='ml-10 flex justify-around bg-zinc-800
            border-2 border-primary/80 rounded-xl hover:red-shadow hover:scale-105 duration-300
            md:max-w-[400px] !mt-[44px] p-4'>
             <div className='flex flex-col items-center gap-2 '>

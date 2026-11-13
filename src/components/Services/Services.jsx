@@ -48,7 +48,7 @@ const ServicesData = [
 
 const Services = () => {
   return (
-    <section id="services" style={bgStyle}>
+    <section id="services" >
       <div
         className="bg-gradient-to-b from-black to-primary/5
             text-white pt-40"

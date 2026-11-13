@@ -33,7 +33,7 @@ const LiveClock = ()=>{
         return ()=> clearInterval(interval)
     },[])
     return (
-    <div className="flex items-center gap-4 bg-black border border-white/10 backdrop-blur-md rounded-xl p-4 max-w-[400px] mx-auto md:mx-0 hover:border-primary/60 transition duration-300">
+    <div className="flex items-center gap-4 bg-zinc-800 border border-white/10 backdrop-blur-md rounded-xl p-4 max-w-[400px] mx-auto md:mx-0 hover:border-primary/60 transition duration-300">
       <div className="w-11 h-11 rounded-full bg-primary flex items-center justify-center">
         <span className="text-xl">🕒</span>
       </div>
