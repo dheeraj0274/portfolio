@@ -36,7 +36,7 @@ const Hero = () => {
     
         
   return (
-<section style={wallBackground} className="bg-black  mt-10
+<section style={wallBackground} className="bg-black  mt-10 h-100vh
 text-white">
     <div className="bg-gradient-to-b from-primary/50 to-black  ">
         <div className="container grid grid-cols-1
@@ -91,7 +91,7 @@ text-white">
                 />
             </div>
         </div>
-         <div className=" ml-10">
+         <div className=" ml-10 mt-10 mb-5">
   <LiveClock />
 </div>
         </div>

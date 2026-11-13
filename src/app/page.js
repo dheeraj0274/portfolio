@@ -8,10 +8,15 @@ import Contact from '@/components/Contact/Contact'
 import Footer from '@/components/Footer/Footer'
 import Skills from '@/components/Skills/Skills'
 import ContactFooter from '@/components/ContactFooter'
+import MusicPlayer from "@/components/MusicPlayer";
+import DigitalUniverseIntro from "@/components/DigitalUniverseIntro";
 
 const page = () => {
   return (
     <>
+    <DigitalUniverseIntro/>
+
+    
     <div className='flex justify-center'>
     <ContactFooter/>
     </div>
@@ -23,7 +28,13 @@ const page = () => {
    <Skills/>
    <Projects/>
    <Contact/>
+   
+     <MusicPlayer/>
+
+   
+  
    <Footer/>
+
    </>
   
   )
