@@ -121,7 +121,7 @@ export default function MusicPlayer() {
       <audio
         ref={audioRef}
         src={currentTrack.src}
-        loop
+        
         preload="auto"
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
@@ -130,7 +130,7 @@ export default function MusicPlayer() {
         onEnded={nextSong}
       />
 
-      {/* Music consent popup */}
+    
       {showConsent && (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-md p-5">
           <div className="w-full max-w-sm rounded-3xl border border-white/10 bg-[#111018] p-7 text-center text-white shadow-2xl">
@@ -167,7 +167,7 @@ export default function MusicPlayer() {
         </div>
       )}
 
-      {/* Desktop floating player + Mobile navbar opened player */}
+
       <div
         className={`fixed bottom-[100px] right-3 sm:right-7 z-[999] ${
           isOpen ? "block" : "hidden md:block"
