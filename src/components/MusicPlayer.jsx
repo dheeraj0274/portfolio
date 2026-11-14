@@ -4,11 +4,18 @@
 import { useEffect, useRef, useState } from "react";
 
 const tracks = [
+   {
+    title:"Classic",
+    artist:"Artist 2",
+    src:"/music/music2.mp3"
+
+  },
   {
     title: "Song One",
     artist: "Artist One",
     src: "/music/music1.mp3",
-  },
+  }
+ 
 ];
 
 export default function MusicPlayer() {
@@ -23,7 +30,7 @@ export default function MusicPlayer() {
 
   const currentTrack = tracks[currentIndex];
 
-  // Listen for mobile navbar music button
+
   useEffect(() => {
     const openMobilePlayer = () => setIsOpen(true);
 
@@ -66,10 +73,29 @@ export default function MusicPlayer() {
     }
   };
 
-  const nextSong = () => {
-    setCurrentIndex((prev) => (prev + 1) % tracks.length);
-    setIsPlaying(true);
-  };
+  const nextSong = async () => {
+  const nextIndex = (currentIndex + 1) % tracks.length;
+  const audio = audioRef.current;
+
+  setCurrentIndex(nextIndex);
+  setIsPlaying(true);
+
+  audio.pause();
+  audio.src = tracks[nextIndex].src;
+  audio.load();
+
+  try {
+    await new Promise((resolve, reject) => {
+      audio.addEventListener("canplay", resolve, { once: true });
+      audio.addEventListener("error", reject, { once: true });
+    });
+
+    await audio.play();
+  } catch (error) {
+    console.error("Next song playback error:", error);
+    setIsPlaying(false);
+  }
+};
 
   const previousSong = () => {
     setCurrentIndex((prev) => (prev - 1 + tracks.length) % tracks.length);

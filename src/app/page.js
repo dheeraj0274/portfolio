@@ -21,8 +21,10 @@ const page = () => {
     <div className='flex justify-center'>
     <ContactFooter/>
     </div>
+     <Navbar/>
 
-   <Navbar/>
+<div className='md:pl-8'>
+  
    <Hero/>
    <Banner/>
    <Services/>
@@ -35,6 +37,9 @@ const page = () => {
    
   
    <Footer/>
+
+</div>
+  
 
    </>
   

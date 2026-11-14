@@ -6,6 +6,7 @@ import {motion} from "framer-motion"
 import CountUp from "react-countup"
 import photo from "../../assets/hacker3.png"
 import circle from "../../assets/circle4.png"
+import deadpool1 from '../../assets/deadpool1.png'
 import LiveClock from './LiveClock'
 
 const wallBackground ={
@@ -86,8 +87,8 @@ text-white">
             <div className='bg-black rounded-3xl overflow-hidden h-[500px]  flex items-end relative group hover:red-shadow
             hover:scale-105 duratio-700 '>
                 <Image src={circle}  alt="circle"
-                className=' absolute top-4 -left-0 -z-0 animate-spin group-hover:animate-pulse duration-300'/>
-                <Image  className="relative w-[400px] z-10 group-hover:grayscale group-hover:scale-98 duration-700" src={photo} alt="hero"
+                className=' absolute top-5 -left-0 -z-0 animate-spin group-hover:animate-pulse duration-300'/>
+                <Image  className="relative bottom-[120px] left-8 w-[400px] z-10 group-hover:grayscale group-hover:scale-98 duration-700 " src={deadpool1} alt="hero"
                 />
             </div>
         </div>
