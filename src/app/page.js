@@ -10,6 +10,7 @@ import Skills from '@/components/Skills/Skills'
 import ContactFooter from '@/components/ContactFooter'
 import MusicPlayer from "@/components/MusicPlayer";
 import DigitalUniverseIntro from "@/components/DigitalUniverseIntro";
+import TechOrbit from '@/components/TechOrbit'
 
 const page = () => {
   return (
@@ -25,7 +26,7 @@ const page = () => {
    <Hero/>
    <Banner/>
    <Services/>
-   <Skills/>
+   <TechOrbit/>
    <Projects/>
    <Contact/>
    
