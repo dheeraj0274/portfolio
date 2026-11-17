@@ -15,7 +15,7 @@ const ContactFooter = () => {
 
   return (
     <div className='fixed bottom-10 md:left-5 md:top-[30%] z-[1000] w-[60%] md:w-fit'>
-      <div className='p-2 rounded-2xl md:h-[60%] bg-white border border-white/20'>
+      <div className='p-2 rounded-2xl md:h-[60%] bg-zinc-700 border border-white/20'>
         <div className='flex md:flex-col justify-around items-center h-full'>
 
           <Link href='https://github.com/dheeraj0274' target='_blank' className='hover:bg-blue-400 hover:scale-125 duration-300 rounded-xl p-1'>
